@@ -1,0 +1,103 @@
+# This is a combination of 2 commits.
+# The first commit's message is:
+
+Created passive_windows hostgroup and services
+
+ * Added new hostgroup: passive_windows
+ * Added new service: cpu
+ * Added new service: mem
+ * Added new service: disk
+ * Added new service: service
+ * Cleanup
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Author:    admin <adagios@80f2deb4a4ae>
+# Date:      Wed Jun 17 11:08:56 2015 +0000
+#
+# rebase in progress; onto 67d0a30
+# You are currently editing a commit while rebasing branch 'master' on '67d0a30'.
+#
+# Changes to be committed:
+#	deleted:    _git/COMMIT_EDITMSG
+#	deleted:    _git/HEAD
+#	deleted:    _git/ORIG_HEAD
+#	deleted:    _git/config
+#	deleted:    _git/description
+#	deleted:    _git/hooks/applypatch-msg.sample
+#	deleted:    _git/hooks/commit-msg.sample
+#	deleted:    _git/hooks/post-commit.sample
+#	deleted:    _git/hooks/post-receive.sample
+#	deleted:    _git/hooks/post-update.sample
+#	deleted:    _git/hooks/pre-applypatch.sample
+#	deleted:    _git/hooks/pre-commit.sample
+#	deleted:    _git/hooks/pre-rebase.sample
+#	deleted:    _git/hooks/prepare-commit-msg.sample
+#	deleted:    _git/hooks/update.sample
+#	deleted:    _git/index
+#	deleted:    _git/info/exclude
+#	deleted:    _git/logs/HEAD
+#	deleted:    _git/logs/refs/heads/master
+#	deleted:    _git/objects/0c/a59a7957aef8846c91bb14fb572d0a019e63a4
+#	deleted:    _git/objects/15/5402153fe2eb03d30788ef049cb6b5e85aff9b
+#	deleted:    _git/objects/16/50063871d6655e515fc7839fe15009489e99a4
+#	deleted:    _git/objects/16/cfcacf40833182758cf161f2a1dea8a78be9fb
+#	deleted:    _git/objects/1d/e8855f99711d029ddcf093101c7c3441c31ffc
+#	deleted:    _git/objects/23/50108d6c034c7730101d5bad40527408fa8892
+#	deleted:    _git/objects/26/4a63ac3fd0c6bd500cefec8fe82eb744a7887b
+#	deleted:    _git/objects/2a/f0f0e239013a52306c43290b280b4b134179cc
+#	deleted:    _git/objects/2e/41e99223e5f8007b02322ea3ed3bb1007f0789
+#	deleted:    _git/objects/34/3b72e98e2d4f1464cd80b472f0e05dc73a12dd
+#	deleted:    _git/objects/37/657b2bd8cca6df93e6b89c10a187e055ea53ea
+#	deleted:    _git/objects/37/89595beaef088dde84a4b30dd41b87a707b2f3
+#	deleted:    _git/objects/43/3257e53323ed853fb4a2581be7ef239ea97c0d
+#	deleted:    _git/objects/4b/3410b3e2d6ee737180f34dc7234084ef89f1a1
+#	deleted:    _git/objects/4f/0364e463f292609f4a55c73edb0514d6a7ce1b
+#	deleted:    _git/objects/50/da403b78251361c1b1e8f0a270f983ac57aceb
+#	deleted:    _git/objects/51/500b1ebb9f1d082e8fc313730b427eee9866ee
+#	deleted:    _git/objects/51/a8931b62d66b77888d56615f23e6bf0c8b0bca
+#	deleted:    _git/objects/56/60a503abe5b0d5001923346af721d62c36c328
+#	deleted:    _git/objects/60/c4db66adc3a10d08addf5c5e78020bbc398949
+#	deleted:    _git/objects/68/82cedc02898f3dde3984cc80681f28e4a43f24
+#	deleted:    _git/objects/68/ed910ba484ef5caec7c2151578bbb26ea7444a
+#	deleted:    _git/objects/6b/15d925617dc5f5623a10271036639a6cf0cd6e
+#	deleted:    _git/objects/6d/39b978a3f4fc2dec09328ed37ab3dd3e19cf37
+#	deleted:    _git/objects/70/0ddc3f5e9d4fa9a2a828d314f87fba618420c8
+#	deleted:    _git/objects/72/2848462a63d16cb0c67e1243f2e1d31a691b7c
+#	deleted:    _git/objects/7d/1716c7b57bfaffc4795572b9860082cac0b667
+#	deleted:    _git/objects/7f/1802ef3f715281e5f83004d2004f75b617b154
+#	deleted:    _git/objects/8d/cb788f04580ba62f378b32551c09960af0b1ba
+#	deleted:    _git/objects/97/e4f0f9f67fd7a99ea2c115a25800b726bdae1d
+#	deleted:    _git/objects/a4/9c089cec40e22b650fc31a52bd6793a491667a
+#	deleted:    _git/objects/a5/27f59b8b35dbf504b69500dfa2f0a588901ce4
+#	deleted:    _git/objects/a6/d7119d04ab36a6dd52d7392574b345ecb961c2
+#	deleted:    _git/objects/b9/0fc6849bd8181f11347bb278cdc6ec917d7eab
+#	deleted:    _git/objects/b9/66b1b159a7f69aa095636873eaee108ca48330
+#	deleted:    _git/objects/ba/2635783fd153adb546730427d155f69461d396
+#	deleted:    _git/objects/bd/16db1a638c973b976b8ca5848f8e3c9151eb59
+#	deleted:    _git/objects/be/5ef115f9ca4b30613afdb0e48c4fea859066a4
+#	deleted:    _git/objects/bf/9b705f28f2b41a74014249f5b5df91905ef565
+#	deleted:    _git/objects/c1/3014c65e5f1d56a99d26ffa6c87e7823bad637
+#	deleted:    _git/objects/c6/8b159d2069ef05f8c2613d09234dbce5cf0674
+#	deleted:    _git/objects/c9/ee98f7c49e09459da7338d338e38ba0e98c370
+#	deleted:    _git/objects/ce/608de67b548c86a21d703d790026f827067076
+#	deleted:    _git/objects/d0/83646c9f079dc3edc65feeae7df7f4c13a0ab5
+#	deleted:    _git/objects/d1/3b7e83b6b786b8337735e63d3630afc102816f
+#	deleted:    _git/objects/d5/3a82fdd7d735b0d54e4328a23a6d43430154c9
+#	deleted:    _git/objects/e1/70ba179bd3dcbb41d2fbb30b16cb5fc1e22ec9
+#	deleted:    _git/objects/e8/5a62eb3867a63d6f53eb7ad7157c070ae304c6
+#	deleted:    _git/objects/eb/c2e1e64e96dd2fe1c1b6c12b2a588b948a69e5
+#	deleted:    _git/objects/f0/584a055bc2ad76959000f9ef4587f58fe2a0f3
+#	deleted:    _git/objects/f1/02ddc0e94a772018d84c23881f42bc69ddf9e2
+#	deleted:    _git/objects/f4/29bc1f9af82c2939e6007d9a3216d2a8177553
+#	deleted:    _git/objects/f6/0f3b4d5e396823acf83cb43ae6c59693421a79
+#	deleted:    _git/objects/fc/528d5bcdbb738220775bde8e9fec5c549d8f97
+#	deleted:    _git/refs/heads/master
+#	deleted:    _gitignore
+#	new file:   okconfig/hostgroups/passive_windows.cfg
+#	new file:   okconfig/services/cpu.cfg
+#	new file:   okconfig/services/disk.cfg
+#	new file:   okconfig/services/mem.cfg
+#	new file:   okconfig/services/service.cfg
+#

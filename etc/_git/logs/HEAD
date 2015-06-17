@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 67d0a30b5df3510913af35f34227dc826ecb98df root <root@80f2deb4a4ae.(none)> 1434539262 +0000	commit (initial): Initial commit
+67d0a30b5df3510913af35f34227dc826ecb98df 3a4a7df8ba22f6932428eea3d43f526fb5376b7a nagios <nagios@80f2deb4a4ae.(none)> 1434539318 +0000	commit: host "NEUROMANCER" saved.
+3a4a7df8ba22f6932428eea3d43f526fb5376b7a cb4f5cdd795534e49452ac69b36173999ab0635e nagios <nagios@80f2deb4a4ae.(none)> 1434539336 +0000	commit: hostgroup "passive_windows" saved.
+cb4f5cdd795534e49452ac69b36173999ab0635e 78620157d31f99a16d288b2f3af6ffaa0e496523 nagios <nagios@80f2deb4a4ae.(none)> 1434539342 +0000	commit: hostgroup "passive_windows" saved.
+78620157d31f99a16d288b2f3af6ffaa0e496523 6c0dc1d9b6846007c7184fae802ae853deb65183 nagios <nagios@80f2deb4a4ae.(none)> 1434539371 +0000	commit: service "cpu" saved.
+6c0dc1d9b6846007c7184fae802ae853deb65183 8b6920de0b71442dc7bf6d21907c9dbfcc4e7e5e nagios <nagios@80f2deb4a4ae.(none)> 1434539422 +0000	commit: service "mem" saved.
+8b6920de0b71442dc7bf6d21907c9dbfcc4e7e5e b50417c2ea86278c9b533f42fdb48fbb9ed144a2 nagios <nagios@80f2deb4a4ae.(none)> 1434539441 +0000	commit: service "disk" saved.
+b50417c2ea86278c9b533f42fdb48fbb9ed144a2 30993407b3c320a37edab23c5fad1ffe02bf2c92 nagios <nagios@80f2deb4a4ae.(none)> 1434539462 +0000	commit: service "service" saved.
+30993407b3c320a37edab23c5fad1ffe02bf2c92 cb4f5cdd795534e49452ac69b36173999ab0635e Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (start): checkout 67d0a30
+cb4f5cdd795534e49452ac69b36173999ab0635e 9c642a349fdc9a194f9a7365daa3848ca74dff81 Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (squash): # This is a combination of 2 commits.
+9c642a349fdc9a194f9a7365daa3848ca74dff81 e0ad6e5bed22091348f08d9b39afc529cc66fec1 Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (squash): # This is a combination of 3 commits.
+e0ad6e5bed22091348f08d9b39afc529cc66fec1 16650347284492947232677f31d37fe0f4b4f079 Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (squash): # This is a combination of 4 commits.
+16650347284492947232677f31d37fe0f4b4f079 ec57f005da502c59d280ada412b3908df862862a Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (squash): # This is a combination of 5 commits.
+ec57f005da502c59d280ada412b3908df862862a dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 Mads Hvelplund <mhv@tmnet.dk> 1434539691 +0200	rebase -i (squash): Created passive_windows hostgroup and services
+dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 Mads Hvelplund <mhv@tmnet.dk> 1434539751 +0200	rebase -i (finish): returning to refs/heads/master
+dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 725ba6e8298263724e071ddb02df79efcc9da0b2 Mads Hvelplund <mhv@tmnet.dk> 1434539822 +0200	commit: Cleanup
+725ba6e8298263724e071ddb02df79efcc9da0b2 dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 Mads Hvelplund <mhv@tmnet.dk> 1434539843 +0200	rebase -i (start): checkout 67d0a30
+dd6741b907a9cb4a05dff6d7c4ff28bd374bc5d1 073abff13e48dbeecc1402d56888082c40325a8f Mads Hvelplund <mhv@tmnet.dk> 1434539844 +0200	rebase -i (squash): Created passive_windows hostgroup and services
+073abff13e48dbeecc1402d56888082c40325a8f 073abff13e48dbeecc1402d56888082c40325a8f Mads Hvelplund <mhv@tmnet.dk> 1434539857 +0200	rebase -i (finish): returning to refs/heads/master
