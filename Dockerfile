@@ -35,6 +35,6 @@ RUN mv -f _gitignore .gitignore
 ADD supervisord.conf /etc/supervisord.conf
 
 #Cleanup
-RUN rm -rf download
+RUN rm -rf /download
 
 EXPOSE 80 5667
