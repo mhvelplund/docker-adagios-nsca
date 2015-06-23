@@ -29,8 +29,6 @@ RUN sed -e 's/nagiosadmin/admin/' /etc/nagios/cgi.cfg > /tmp.cfg
 RUN mv -f /tmp.cfg /etc/nagios/cgi.cfg 
 RUN chown -R nagios.nagios /etc/nagios
 WORKDIR /etc/nagios
-RUN mv -f _git .git
-RUN mv -f _gitignore .gitignore
 
 ADD supervisord.conf /etc/supervisord.conf
 
