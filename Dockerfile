@@ -6,7 +6,7 @@ MAINTAINER Mads Hvelplund "mhv@tmnet.dk"
 ENV GIT_REPO true
 
 # Download
-RUN yum -y install tar make automake gcc-c++ syslog
+RUN yum -y install tar make automake gcc-c++ syslog libmcrypt-devel.x86_64
 COPY nsca-2.9.1.tar.gz /download/nsca-2.9.1.tar.gz
 WORKDIR /download
 RUN tar xvzf nsca-2.9.1.tar.gz
