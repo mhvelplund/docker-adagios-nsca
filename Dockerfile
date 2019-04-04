@@ -1,38 +1,32 @@
 # Adagios server
 FROM pschmitt/adagios
-MAINTAINER Mads Hvelplund "mhv@tmnet.dk"
+MAINTAINER Mads Hvelplund "mads@swissarmyronin.dk"
 
 # Enable git repository
 ENV GIT_REPO true
 
-# Download
-RUN yum -y install tar make automake gcc-c++ syslog libmcrypt-devel.x86_64
 COPY nsca-2.9.1.tar.gz /download/nsca-2.9.1.tar.gz
-WORKDIR /download
-RUN tar xvzf nsca-2.9.1.tar.gz
+COPY etc /etc/nagios
+COPY supervisord.conf /etc/supervisord.conf
+COPY fixcgicfg.sh /opt/fixcgicfg.sh
 
-# Compile
-WORKDIR /download/nsca-2.9.1
-RUN ./configure
-RUN make all
-RUN cp -v "/download/nsca-2.9.1/src/nsca" "/usr/sbin/nsca"
-WORKDIR /
+RUN rpm --rebuilddb && \
+	yum install -y tar automake gcc-c++ syslog libmcrypt-devel.x86_64 && \
+	tar -C /download/ -xvzf /download/nsca-2.9.1.tar.gz && \
+	cd /download/nsca-2.9.1 && \
+	./configure && \
+	make all && \
+	cp -v "/download/nsca-2.9.1/src/nsca" "/usr/sbin/nsca" && \
+	chown -R nagios.nagios /etc/nagios && \
+	chmod +x /opt/fixcgicfg.sh && \
+	yum remove -y tar automake gcc-c++ && \
+	rm -rf /download /var/cache/yum
 
-# Debug
-#ADD test.message /test/test.message
-#RUN cp -v "/download/nsca-2.9.1/src/send_nsca" "/test/send_nsca"
-#RUN cp -v "/download/nsca-2.9.1/sample-config/send_nsca.cfg" "/test/send_nsca.cfg"
+## Debug
+#COPY test.message /test/test.message # DEBUG
+#RUN cp -v "/download/nsca-2.9.1/src/send_nsca" "/test/send_nsca" && \
+#	cp -v "/download/nsca-2.9.1/sample-config/send_nsca.cfg" "/test/send_nsca.cfg"
 
-# Configure
-ADD etc /etc/nagios
-RUN sed -e 's/nagiosadmin/admin/' /etc/nagios/cgi.cfg > /tmp.cfg
-RUN mv -f /tmp.cfg /etc/nagios/cgi.cfg 
-RUN chown -R nagios.nagios /etc/nagios
 WORKDIR /etc/nagios
-
-ADD supervisord.conf /etc/supervisord.conf
-
-#Cleanup
-RUN rm -rf /download
 
 EXPOSE 80 5667
